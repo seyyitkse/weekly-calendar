@@ -31,18 +31,18 @@ export default class Calendar {
 
   setTitle() {
     const monthNames = [
-      'January',
-      'February',
-      'March',
-      'April',
-      'May',
-      'June',
-      'July',
-      'August',
-      'September',
-      'October',
-      'November',
-      'December'
+      'Ocak',
+      'Şubat',
+      'Mart',
+      'Nisan',
+      'Mayıs',
+      'Haziran',
+      'Temmuz',
+      'Ağustos',
+      'Eylül',
+      'Ekim',
+      'Kasım',
+      'Aralık'
     ];
     const titleMonth = document.createElement('span');
     titleMonth.classList.add('calendar-title-month');
@@ -110,7 +110,7 @@ export default class Calendar {
     const allDayRow = document.createElement('div');
     allDayRow.classList.add('calendar-all-day-row');
     this._createCalendarBodyColumns(allDayRow);
-    allDayRow.querySelector('.calendar-timeline-column').innerText = 'all-day';
+    allDayRow.querySelector('.calendar-timeline-column').innerText = 'Saatler';
     calendarBody.appendChild(allDayRow);
   }
 
@@ -405,13 +405,13 @@ export default class Calendar {
 
   _getDayName(date) {
     const dayNames = [
-      'Sun',
-      'Mon',
-      'Tue',
-      'Wed',
-      'Thu',
-      'Fri',
-      'Sat'
+      'Pazar',
+      'Pazartesi',
+      'Salı',
+      'Çarşamba',
+      'Perşembe',
+      'Cuma',
+      'Cumartesi'
     ];
     return dayNames[date.getDay()];
   }
