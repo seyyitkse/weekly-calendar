@@ -62,7 +62,7 @@ table {
   --font-family: 'Open Sans', sans-serif;
   --timeline-width: 60px;
   --calendar-cell-height: 40px;
-  --calendar-cell-width: 106px;
+  --calendar-cell-width: 212px;
   --calendar-body-height: 600px;
 }
 
@@ -89,13 +89,14 @@ button:hover {
 .calendar-container {
   width: 100%;
   max-width: var(--calendar-max-width);
-  margin: 1rem;
+  margin: auto; /* Sayfanın ortasına almak için */
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
 
 .calendar-header {
   width: 100%;
@@ -120,8 +121,8 @@ button:hover {
 }
 
 .calendar {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,8 +131,8 @@ button:hover {
 }
 
 .calendar-days {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -355,7 +356,7 @@ button:hover {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 1500px) {
   .calendar-day-number{
     display: none;
   }
